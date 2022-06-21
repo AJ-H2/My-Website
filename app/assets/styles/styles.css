@@ -1,0 +1,11 @@
+$mainBlue: #2f5572;
+
+body {
+    color: orange;
+}
+
+.hero {
+    h1 {
+        color: $mainBlue;
+    }
+}
