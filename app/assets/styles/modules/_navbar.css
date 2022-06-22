@@ -1,0 +1,48 @@
+
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: #1ab394;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+
+    .links {
+        padding: .5rem;
+        color: unset;
+        text-decoration: none;
+        border-radius: 1px;
+
+        &:hover {
+            background-color: #eee;
+        }
+
+        &__img {
+            background: #1ab394;
+            color: #fafafa;
+            text-decoration: none;
+            padding: .5rem;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+
+        &__wrap {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+    }
+    
+}
+

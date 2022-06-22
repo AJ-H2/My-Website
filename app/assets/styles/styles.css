@@ -1,11 +1,9 @@
-$mainBlue: #2f5572;
+@import 'normalize.css';
+@import 'base/_global';
+@import 'modules/_navbar.css';
+@import 'modules/_hero.css';
+@import 'modules/_consultation.css';
+@import 'modules/_services.css';
 
-body {
-    color: orange;
-}
 
-.hero {
-    h1 {
-        color: $mainBlue;
-    }
-}
+

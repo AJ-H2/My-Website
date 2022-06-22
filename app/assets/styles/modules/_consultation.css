@@ -1,0 +1,25 @@
+.consultation__section {
+    background-color: #1ab394;
+    margin-top: .25rem;
+    padding: .35rem 1rem;
+}
+
+.consultation {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    color: #fafafa;
+
+    &__cta {
+        margin-left: 1.5rem;
+        background-color: orange;
+        color: #fafafa;
+        text-decoration: none;
+        padding: .65rem 1rem;
+        font-size: 1.05rem;
+        border-radius: 2px;
+        box-shadow: 2px 2px 12px #00000025;
+    }
+}

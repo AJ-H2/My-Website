@@ -1,0 +1,29 @@
+.services__section {
+    &__title {
+        text-align: center;
+        font-size: 3.55rem;
+        margin: 3.5rem;
+    }
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #eaeaea;
+    border: 1px solid #1ab39431;
+    border-radius: 4px;
+
+    &__img {
+        border-radius: 4px;
+        display: block;
+    }
+
+    &__item {
+        &::marker {
+            color: #1ab394;
+        }
+    }
+}
