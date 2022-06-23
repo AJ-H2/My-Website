@@ -19,5 +19,11 @@ body {
 .section {
     padding: 1rem;
     background-color: white;
+
+    &__title {
+        text-align: center;
+        font-size: 3.55rem;
+        margin: 3rem;
+    }
 }
 

@@ -1,9 +1,5 @@
 .services__section {
-    &__title {
-        text-align: center;
-        font-size: 3.55rem;
-        margin: 3.5rem;
-    }
+   
 }
 
 .services {
@@ -16,12 +12,25 @@
     border: 1px solid #1ab39431;
     border-radius: 4px;
 
+    &__list {
+        height: 100%;
+    }
+
+    &__wrap {
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
     &__img {
         border-radius: 4px;
         display: block;
     }
 
     &__item {
+        font-size: 1.5rem;
         &::marker {
             color: #1ab394;
         }
