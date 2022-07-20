@@ -1,9 +1,10 @@
 const path = require('path')
 const postCSSPlugins = [
+    require('postcss-import'),
+    require('postcss-mixins'),
     require('postcss-simple-vars'),
     require('postcss-nested'),
     require('autoprefixer'),
-    require('postcss-import'),
 ]
 
 module.exports = {
@@ -15,8 +16,11 @@ module.exports = {
     devServer: {
         static: path.join(__dirname, 'app'),
         hot: true,
-        port: 3000,
+        compress: true,
+        port: 8080,
+        historyApiFallback: true,
         open: true,
+        host: '0.0.0.0'
     },
     mode: 'development',
     

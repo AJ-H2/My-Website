@@ -4,6 +4,10 @@
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+
+    @mixin mobile {
+        display: unset;
+    }
 }
 
 .testimonial {

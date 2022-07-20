@@ -1,4 +1,6 @@
-
+.section__navigation {
+    position: relative;
+}
 
 .navBar {
     display: flex;
@@ -7,6 +9,7 @@
     color: #1ab394;
     max-width: 1200px;
     margin: 0 auto;
+    
     
 
     .links {
@@ -41,8 +44,47 @@
             padding: 0;
             margin: 0;
             list-style: none;
+
+            @mixin mobile {
+                display: none;
+                transform: translateY(0);
+            }
+        }
+
+        &__mobile {
+            display: none;
+            transform: scale(1.2);
         }
     }
     
 }
 
+@keyframes mobile {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.revealed {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    animation: mobile .1s forwards ease-out;
+    width: 100%;
+    background: white;
+    transform: scale(1);
+
+    a {
+        display: block;
+    }
+}
+
+.hamburger {
+    display: none;
+
+    @mixin mobile {
+        display: block;
+        background-color: #1ab394;
+        padding: 1rem;
+    }
+}
