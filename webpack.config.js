@@ -16,11 +16,17 @@ module.exports = {
     devServer: {
         static: path.join(__dirname, 'app'),
         hot: true,
-        compress: true,
-        port: 8080,
-        historyApiFallback: true,
+        port: 8081,
         open: true,
-        host: '0.0.0.0'
+
+        onListening: function (devServer) {
+            if (!devServer) {
+                throw new Error ('dev-server not defined');
+            }
+
+            const port = devServer.server.address().port;
+            console.log("Listening on port:", port);
+        },
     },
     mode: 'development',
     
